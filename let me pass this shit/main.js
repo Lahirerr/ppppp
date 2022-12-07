@@ -20,7 +20,7 @@ function TodoList(){
 
     function addTodo(desc){
         todos.push(new Todo(desc))
-        return todos.length
+         return todos.length
     }
     function removeTodo(removeId){
         return todos = todos.filter(a => a !== removeId)
