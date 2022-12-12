@@ -28,10 +28,10 @@ function countCovidStatus(covidStatusArray) {
       if(covid === target3){count3++}
     }
   let result = {}
-  if(count2>0)
-        result['negative and low risk']=count2
   if(count>0)
-        result.positive=count
+        result['negative and low risk']=count
+  if(count2>0)
+        result['positive']=count2
   if(count3>0)
         result['negative and high risk']=count3
   return result
@@ -74,3 +74,5 @@ console.log(
 
 // let doIt2=doSomething(10,2)
 // console.log(doIt2)
+
+   
